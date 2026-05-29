@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>目的地详情 | WanderLux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="detail-page">
+
+  <!-- 顶部导航栏 -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-compass"></i> WanderLux
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#destinations">目的地</a></li>
+        <li><a href="index.html#experiences">体验</a></li>
+        <li><a href="index.html#packages">套餐</a></li>
+        <li><a href="index.html#gallery">画廊</a></li>
+        <li><a href="index.html#contact">联系我们</a></li>
+      </ul>
+      <a href="index.html#packages" class="nav-btn">立即预订</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== 详情 Hero ========== -->
+  <section class="detail-hero" id="detailHero">
+    <div class="detail-hero-bg" id="detailHeroBg"></div>
+    <div class="detail-hero-overlay"></div>
+    <div class="detail-hero-content">
+      <div class="detail-breadcrumb">
+        <a href="index.html">首页</a> <i class="fas fa-chevron-right"></i> <a href="index.html#destinations">目的地</a> <i class="fas fa-chevron-right"></i> <span id="breadcrumbName">马尔代夫</span>
+      </div>
+      <span class="detail-hero-tag" id="detailHeroTag">海岛度假</span>
+      <h1 class="detail-hero-title" id="detailHeroTitle">马尔代夫</h1>
+      <p class="detail-hero-subtitle" id="detailHeroSubtitle">碧海白沙的天堂 · 水上屋与珊瑚礁的绝美邂逅</p>
+      <div class="detail-hero-meta">
+        <div class="detail-meta-item"><i class="fas fa-clock"></i><span id="detailDuration">6天5夜</span></div>
+        <div class="detail-meta-item"><i class="fas fa-star"></i><span>4.9 分</span></div>
+        <div class="detail-meta-item"><i class="fas fa-users"></i><span>2,380+ 人已出行</span></div>
+        <div class="detail-meta-item"><i class="fas fa-heart"></i><span>98% 好评率</span></div>
+      </div>
+    </div>
+    <div class="detail-hero-bottom">
+      <div class="detail-price-block">
+        <span class="detail-price-label">起步价</span>
+        <span class="detail-price-old" id="detailPriceOld">¥24,800</span>
+        <span class="detail-price-current" id="detailPriceCurrent">¥18,000</span>
+        <span class="detail-price-per">/ 人起</span>
+      </div>
+      <a href="#detail-booking" class="detail-cta-btn">立即预订 <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== 快速亮点 ========== -->
+  <section class="detail-highlights">
+    <div class="container">
+      <div class="highlights-grid" id="highlightsGrid">
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-water"></i></div>
+          <h4>水上别墅</h4>
+          <p>私人无边泳池，推窗即见碧蓝大海</p>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-utensils"></i></div>
+          <h4>美食盛宴</h4>
+          <p>米其林主厨定制，海底餐厅烛光晚餐</p>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-fish"></i></div>
+          <h4>深潜探索</h4>
+          <p>专业教练陪同，与鲸鲨同游的奇妙体验</p>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-spa"></i></div>
+          <h4>水疗养生</h4>
+          <p>五星级 SPA 中心，身心全面疗愈放松</p>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-concierge-bell"></i></div>
+          <h4>私人管家</h4>
+          <p>24小时专属管家，满足一切合理需求</p>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-camera"></i></div>
+          <h4>摄影跟拍</h4>
+          <p>专业旅拍摄影师，记录每个精彩瞬间</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 目的地介绍 ========== -->
+  <section class="detail-intro">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-main reveal">
+          <span class="section-tag">ABOUT</span>
+          <h2 class="section-title">关于这片人间仙境</h2>
+          <p class="intro-text">马尔代夫共和国，印度洋上的珍珠项链，由1,192个珊瑚岛组成，是全球最令人心驰神往的热带度假天堂。这里拥有世界上最清澈的海水、最洁白的沙滩和最丰富的海洋生态。</p>
+          <p class="intro-text">想象一下：清晨被温柔的海浪声唤醒，推开水上别墅的玻璃地板，五彩斑斓的热带鱼在脚下穿梭；午后在私人无边泳池中畅游，远眺无际的印度洋蓝；傍晚漫步于细如粉末的白沙滩，在落日余晖中品一杯香槟；夜晚躺在星光下，聆听大海的低语……</p>
+          <p class="intro-text">WanderLux 精选马尔代夫顶级度假村，为您提供超越想象的奢华体验。无论是浪漫蜜月、家庭度假还是独自放空，这里都有专属于您的完美安排。</p>
+          <div class="intro-tags">
+            <span><i class="fas fa-check-circle"></i> 全程五星住宿</span>
+            <span><i class="fas fa-check-circle"></i> 私人快艇接送</span>
+            <span><i class="fas fa-check-circle"></i> 中文导游服务</span>
+            <span><i class="fas fa-check-circle"></i> 全程保险覆盖</span>
+            <span><i class="fas fa-check-circle"></i> 灵活退改政策</span>
+            <span><i class="fas fa-check-circle"></i> 24h 紧急支援</span>
+          </div>
+        </div>
+        <div class="intro-side reveal">
+          <div class="intro-info-card">
+            <h4><i class="fas fa-info-circle"></i> 旅行概览</h4>
+            <div class="info-row"><span>最佳季节</span><strong>11月 - 4月（旱季）</strong></div>
+            <div class="info-row"><span>平均气温</span><strong>28°C - 32°C</strong></div>
+            <div class="info-row"><span>时差</span><strong>比北京慢3小时</strong></div>
+            <div class="info-row"><span>签证</span><strong>落地签 / 免签30天</strong></div>
+            <div class="info-row"><span>货币</span><strong>拉菲亚 (MVR) / 美元通用</strong></div>
+            <div class="info-row"><span>语言</span><strong>迪维希语 / 英语通用</strong></div>
+            <div class="info-row"><span>航班</span><strong>直飞约7.5小时</strong></div>
+            <div class="info-row"><span>适合人群</span><strong>蜜月 / 亲子 / 度假</strong></div>
+          </div>
+          <div class="intro-weather-card">
+            <h4><i class="fas fa-cloud-sun"></i> 最佳出行月份</h4>
+            <div class="weather-months">
+              <span class="wm good">1月</span><span class="wm good">2月</span><span class="wm good">3月</span>
+              <span class="wm good">4月</span><span class="wm ok">5月</span><span class="wm ok">6月</span>
+              <span class="wm ok">7月</span><span class="wm ok">8月</span><span class="wm ok">9月</span>
+              <span class="wm ok">10月</span><span class="wm good">11月</span><span class="wm good">12月</span>
+            </div>
+            <div class="weather-legend">
+              <span><i class="wm good"></i> 最佳</span>
+              <span><i class="wm ok"></i> 适宜</span>
+              <span><i class="wm bad"></i> 雨季</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 图片画廊 ========== -->
+  <section class="detail-gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">GALLERY</span>
+        <h2 class="section-title">视觉之旅</h2>
+        <p class="section-desc">身临其境，感受马尔代夫的每一帧绝美</p>
+      </div>
+      <div class="detail-gallery-grid reveal" id="detailGalleryGrid">
+        <div class="dgal-item dgal-large" data-caption="水上别墅全景">
+          <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80" alt="水上别墅" />
+          <div class="dgal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="dgal-item" data-caption="水下世界">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="深潜" />
+          <div class="dgal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="dgal-item" data-caption="白沙滩日落">
+          <img src="https://images.unsplash.com/photo-1514282401047-d98a6c76c402?w=600&q=80" alt="日落" />
+          <div class="dgal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="dgal-item" data-caption="海底餐厅">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="美食" />
+          <div class="dgal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="dgal-item dgal-wide" data-caption="无边泳池">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80" alt="泳池" />
+          <div class="dgal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="dgal-item" data-caption="星空下的浪漫">
+          <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=600&q=80" alt="夜景" />
+          <div class="dgal-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 图片灯箱 ========== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- ========== 行程安排 ========== -->
+  <section class="detail-itinerary">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">ITINERARY</span>
+        <h2 class="section-title">行程安排</h2>
+        <p class="section-desc">每一天都精心设计，让旅途不留遗憾</p>
+      </div>
+      <div class="itinerary-timeline reveal" id="itineraryTimeline">
+        <div class="iti-item">
+          <div class="iti-day">DAY 1</div>
+          <div class="iti-content">
+            <div class="iti-header">
+              <h3>抵达马尔代夫 · 开启天堂之旅</h3>
+              <span class="iti-meals"><i class="fas fa-utensils"></i> 晚餐</span>
+            </div>
+            <p>抵达马累国际机场后，WanderLux 专属代表在VIP通道迎接您。乘坐私人快艇或水上飞机前往度假村，沿途欣赏印度洋的壮美景色。入住水上别墅后，享用欢迎饮品与水果拼盘，管家将为您详细介绍度假村设施与行程安排。傍晚在主餐厅享用欢迎晚宴。</p>
+            <div class="iti-tags">
+              <span><i class="fas fa-plane-arrival"></i> 机场接送</span>
+              <span><i class="fas fa-hotel"></i> 水上别墅入住</span>
+              <span><i class="fas fa-glass-cheers"></i> 欢迎晚宴</span>
+            </div>
+          </div>
+        </div>
+        <div class="iti-item">
+          <div class="iti-day">DAY 2</div>
+          <div class="iti-content">
+            <div class="iti-header">
+              <h3>深海探索 · 珊瑚花园与鱼群共舞</h3>
+              <span class="iti-meals"><i class="fas fa-utensils"></i> 早/午/晚</span>
+            </div>
+            <p>在海浪声中醒来，于水上别墅享用漂浮早餐。随后参加专业教练带领的浮潜之旅，探索五彩斑斓的珊瑚花园，与热带鱼群共舞。午后自由活动，可选择水上运动项目。傍晚参加日落海钓活动，在甲板上品尝新鲜海钓料理。</p>
+            <div class="iti-tags">
+              <span><i class="fas fa-swimmer"></i> 浮潜探索</span>
+              <span><i class="fas fa-fish"></i> 日落海钓</span>
+              <span><i class="fas fa-cocktail"></i> 沙滩鸡尾酒</span>
+            </div>
+          </div>
+        </div>
+        <div class="iti-item">
+          <div class="iti-day">DAY 3</div>
+          <div class="iti-content">
+            <div class="iti-header">
+              <h3>私属沙洲 · 浪漫野餐与鲸鲨邂逅</h3>
+              <span class="iti-meals"><i class="fas fa-utensils"></i> 早/午/晚</span>
+            </div>
+            <p>今日的专属体验——乘坐多尼船前往无人沙洲，在细白如粉的孤岛上享用私人野餐午餐。下午参加鲸鲨观赏之旅，在专业向导带领下与世界上最大的鱼类温柔同游。晚餐安排在著名的水下餐厅 Ithaa，在珊瑚与鱼群的环绕中享用六道式晚宴。</p>
+            <div class="iti-tags">
+              <span><i class="fas fa-umbrella-beach"></i> 沙洲野餐</span>
+              <span><i class="fas fa-fish"></i> 鲸鲨同游</span>
+              <span><i class="fas fa-wine-glass-alt"></i> 水下餐厅</span>
+            </div>
+          </div>
+        </div>
+        <div class="iti-item">
+          <div class="iti-day">DAY 4</div>
+          <div class="iti-content">
+            <div class="iti-header">
+              <h3>身心疗愈 · 五星水疗与自由时光</h3>
+              <span class="iti-meals"><i class="fas fa-utensils"></i> 早/晚</span>
+            </div>
+            <p>全天自由安排，让身心彻底放松。推荐体验度假村五星级水疗中心的招牌疗程——马尔代夫传统椰油按摩。午后可选择皮划艇、帆船、立式划桨等水上运动，或简单地在无边泳池旁阅读、发呆。傍晚参加日落巡航，在帆船上追逐印度洋最美的落日。</p>
+            <div class="iti-tags">
+              <span><i class="fas fa-spa"></i> 五星水疗</span>
+              <span><i class="fas fa-sailboat"></i> 日落巡航</span>
+              <span><i class="fas fa-swimming-pool"></i> 无边泳池</span>
+            </div>
+          </div>
+        </div>
+        <div class="iti-item">
+          <div class="iti-day">DAY 5</div>
+          <div class="iti-content">
+            <div class="iti-header">
+              <h3>当地文化 · 马累城市探索与夜潜</h3>
+              <span class="iti-meals"><i class="fas fa-utensils"></i> 早/午/晚</span>
+            </div>
+            <p>上午乘船前往马累，探索马尔代夫首都的独特魅力。参观苏丹公园、伊斯兰中心与鱼市场，了解当地文化与生活方式。在特色餐厅品尝地道马尔代夫美食。下午返回度假村后，参加夜间浮潜体验，在荧光浮游生物点亮的海水中感受魔幻般的海洋世界。</p>
+            <div class="iti-tags">
+              <span><i class="fas fa-mosque"></i> 马累探索</span>
+              <span><i class="fas fa-fish"></i> 夜间浮潜</span>
+              <span><i class="fas fa-landmark"></i> 文化体验</span>
+            </div>
+          </div>
+        </div>
+        <div class="iti-item">
+          <div class="iti-day">DAY 6</div>
+          <div class="iti-content">
+            <div class="iti-header">
+              <h3>告别天堂 · 满载回忆归程</h3>
+              <span class="iti-meals"><i class="fas fa-utensils"></i> 早</span>
+            </div>
+            <p>在最后一次印度洋日出中醒来，享用悠闲早餐。管家将为您准备离店手续与纪念品。乘坐私人快艇或水上飞机返回马累机场，WanderLux 专属代表将协助办理值机手续。带着满满回忆与不舍，踏上归途——期待下次旅程再会。</p>
+            <div class="iti-tags">
+              <span><i class="fas fa-gift"></i> 精美纪念品</span>
+              <span><i class="fas fa-plane-departure"></i> 机场送机</span>
+              <span><i class="fas fa-heart"></i> 珍贵回忆</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 费用说明 ========== -->
+  <section class="detail-pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">PRICING</span>
+        <h2 class="section-title">费用说明</h2>
+        <p class="section-desc">透明定价，没有隐藏费用</p>
+      </div>
+      <div class="pricing-grid reveal">
+        <div class="pricing-col">
+          <h4><i class="fas fa-check-circle"></i> 费用包含</h4>
+          <ul class="pricing-list pricing-include">
+            <li>往返国际机票（含税）及行李托运</li>
+            <li>5晚水上别墅住宿（含每日早餐）</li>
+            <li>机场至度假村私人快艇/水飞接送</li>
+            <li>行程所列所有活动及体验项目</li>
+            <li>专业中文导游全程陪同</li>
+            <li>双人 SPA 体验一次（价值 ¥2,800）</li>
+            <li>水下餐厅六道式晚宴一次</li>
+            <li>全程旅行保险（最高保额 100 万）</li>
+            <li>24 小时紧急支援热线</li>
+            <li>精美旅行礼包及纪念品</li>
+          </ul>
+        </div>
+        <div class="pricing-col">
+          <h4><i class="fas fa-times-circle"></i> 费用不包含</h4>
+          <ul class="pricing-list pricing-exclude">
+            <li>个人护照办理及签证费用</li>
+            <li>行程外的个人消费（购物、额外餐饮等）</li>
+            <li>度假村内额外付费的水上运动</li>
+            <li>酒店小费及个人给导游的小费</li>
+            <li>旅行期间的个人医疗费用</li>
+            <li>因不可抗力产生的额外费用</li>
+            <li>国内段交通及住宿费用</li>
+          </ul>
+          <div class="pricing-note">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <strong>安心保障</strong>
+              <p>出发前30天免费取消，15-30天退50%，7-15天退30%。详情请参阅退改政策。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 用户评价 ========== -->
+  <section class="detail-reviews">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">REVIEWS</span>
+        <h2 class="section-title">旅行者说</h2>
+        <p class="section-desc">来自真实旅行者的体验分享</p>
+      </div>
+      <div class="reviews-summary reveal">
+        <div class="review-score">
+          <span class="score-num">4.9</span>
+          <div class="score-stars">★★★★★</div>
+          <span class="score-count">基于 326 条评价</span>
+        </div>
+        <div class="review-bars">
+          <div class="bar-row"><span>5星</span><div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div><span>88%</span></div>
+          <div class="bar-row"><span>4星</span><div class="bar-bg"><div class="bar-fill" style="width:9%"></div></div><span>9%</span></div>
+          <div class="bar-row"><span>3星</span><div class="bar-bg"><div class="bar-fill" style="width:2%"></div></div><span>2%</span></div>
+          <div class="bar-row"><span>2星</span><div class="bar-bg"><div class="bar-fill" style="width:1%"></div></div><span>1%</span></div>
+          <div class="bar-row"><span>1星</span><div class="bar-bg"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+        </div>
+      </div>
+      <div class="reviews-grid reveal">
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-date">2025年3月</span>
+          </div>
+          <h4>"蜜月旅行的完美选择"</h4>
+          <p>"水上别墅的日出让我们终生难忘！每天早上打开玻璃地板就能看到热带鱼在脚下穿梭，太梦幻了。管家服务细致入微，连纪念日蛋糕都准备好了。强烈推荐水下餐厅，在珊瑚和鱼群中用餐的感觉太奇妙了！"</p>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="林小雨" />
+            <div><strong>林小雨</strong><span>蜜月旅行 · 水上别墅</span></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-date">2025年1月</span>
+          </div>
+          <h4>"超出预期的一切"</h4>
+          <p>"第二次通过 WanderLux 出行，依旧没让我失望。鲸鲨同游是我这辈子最震撼的体验！夜潜看到荧光海更是魔幻到不敢相信自己的眼睛。整个行程安排得非常合理，节奏舒适不赶。"</p>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="张浩然" />
+            <div><strong>张浩然</strong><span>家庭度假 · 沙滩别墅</span></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-date">2024年12月</span>
+          </div>
+          <h4>"仙境一般的存在"</h4>
+          <p>"沙洲野餐真的太浪漫了！整个小岛只有我们两个人，侍者穿着正装在大海中央为我们服务，那种感觉太不真实了。SPA 也是顶级水平，做完出来整个人焕然一新。唯一遗憾就是6天太短！"</p>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="王美玲" />
+            <div><strong>王美玲</strong><span>闺蜜游 · 水上别墅</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 预订区域 ========== -->
+  <section class="detail-booking" id="detail-booking">
+    <div class="container">
+      <div class="booking-grid reveal">
+        <div class="booking-form-wrap">
+          <h3>预订您的旅程</h3>
+          <p>填写以下信息，旅行顾问将在2小时内与您联系</p>
+          <form class="booking-form" id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>您的姓名</label>
+                <input type="text" placeholder="请输入姓名" required />
+              </div>
+              <div class="form-group">
+                <label>联系电话</label>
+                <input type="tel" placeholder="请输入手机号" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>出行日期</label>
+                <input type="date" required />
+              </div>
+              <div class="form-group">
+                <label>出行人数</label>
+                <select>
+                  <option>2 人</option><option>3 人</option>
+                  <option>4 人</option><option>5+ 人</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>房型偏好</label>
+              <select>
+                <option>水上别墅</option>
+                <option>沙滩别墅</option>
+                <option>总统套房</option>
+                <option>由顾问推荐</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>特殊需求</label>
+              <textarea rows="3" placeholder="蜜月布置、生日惊喜、饮食禁忌等..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span>提交预订</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        <div class="booking-info-wrap">
+          <div class="booking-price-card">
+            <div class="bpc-header">
+              <span class="bpc-tag">限时优惠</span>
+              <div class="bpc-prices">
+                <span class="bpc-old">¥24,800</span>
+                <span class="bpc-current">¥18,000</span>
+                <span class="bpc-per">/ 人起</span>
+              </div>
+              <span class="bpc-save">立省 ¥6,800</span>
+            </div>
+            <ul class="bpc-includes">
+              <li><i class="fas fa-check"></i> 6天5夜五星水上别墅</li>
+              <li><i class="fas fa-check"></i> 往返机票含税</li>
+              <li><i class="fas fa-check"></i> 所有活动及体验项目</li>
+              <li><i class="fas fa-check"></i> 双人 SPA + 水下餐厅</li>
+              <li><i class="fas fa-check"></i> 中文导游 + 全程保险</li>
+            </ul>
+            <div class="bpc-countdown">
+              <span><i class="fas fa-clock"></i> 优惠剩余</span>
+              <div class="countdown-timer" id="countdownTimer">
+                <span class="cd-block"><b id="cdDays">03</b><i>天</i></span>
+                <span class="cd-sep">:</span>
+                <span class="cd-block"><b id="cdHours">12</b><i>时</i></span>
+                <span class="cd-sep">:</span>
+                <span class="cd-block"><b id="cdMins">45</b><i>分</i></span>
+                <span class="cd-sep">:</span>
+                <span class="cd-block"><b id="cdSecs">30</b><i>秒</i></span>
+              </div>
+            </div>
+          </div>
+          <div class="booking-trust">
+            <div class="trust-item"><i class="fas fa-shield-alt"></i><span>安全保障</span></div>
+            <div class="trust-item"><i class="fas fa-undo"></i><span>免费退改</span></div>
+            <div class="trust-item"><i class="fas fa-headset"></i><span>24h客服</span></div>
+            <div class="trust-item"><i class="fas fa-certificate"></i><span>品质保证</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 相关推荐 ========== -->
+  <section class="detail-related">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">RECOMMEND</span>
+        <h2 class="section-title">猜你也会喜欢</h2>
+      </div>
+      <div class="related-grid reveal">
+        <a href="detail.html?dest=santorini" class="related-card">
+          <div class="related-img" style="background-image:url('https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&q=80')"></div>
+          <div class="related-info">
+            <span class="related-cat">欧洲</span>
+            <h4>希腊 · 圣托里尼</h4>
+            <p>蓝顶白墙，爱琴海梦</p>
+            <span class="related-price">¥13,200起</span>
+          </div>
+        </a>
+        <a href="detail.html?dest=bali" class="related-card">
+          <div class="related-img" style="background-image:url('https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=600&q=80')"></div>
+          <div class="related-info">
+            <span class="related-cat">海岛</span>
+            <h4>巴厘岛 · 印尼</h4>
+            <p>神明之岛，热带天堂</p>
+            <span class="related-price">¥7,200起</span>
+          </div>
+        </a>
+        <a href="detail.html?dest=dubai" class="related-card">
+          <div class="related-img" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80')"></div>
+          <div class="related-info">
+            <span class="related-cat">中东</span>
+            <h4>迪拜 · 阿联酋</h4>
+            <p>摩天奇迹，沙漠奢华</p>
+            <span class="related-price">¥12,500起</span>
+          </div>
+        </a>
+        <a href="detail.html?dest=kyoto" class="related-card">
+          <div class="related-img" style="background-image:url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80')"></div>
+          <div class="related-info">
+            <span class="related-cat">亚洲</span>
+            <h4>日本 · 京都</h4>
+            <p>古刹红叶，禅意之都</p>
+            <span class="related-price">¥8,800起</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo"><i class="fas fa-compass"></i> WanderLux</div>
+            <p>让每一次出发都成为人生最美的记忆。专业定制旅行服务，已服务超过5万名旅行者。</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-weixin"></i></a>
+              <a href="#"><i class="fab fa-weibo"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>热门目的地</h4>
+            <ul>
+              <li><a href="#">马尔代夫</a></li>
+              <li><a href="#">北欧极光</a></li>
+              <li><a href="#">日本京都</a></li>
+              <li><a href="#">希腊爱琴海</a></li>
+              <li><a href="#">迪拜奢华游</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>旅行类型</h4>
+            <ul>
+              <li><a href="#">蜜月旅行</a></li>
+              <li><a href="#">家庭出游</a></li>
+              <li><a href="#">冒险探索</a></li>
+              <li><a href="#">商务考察</a></li>
+              <li><a href="#">摄影之旅</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>关于我们</h4>
+            <ul>
+              <li><a href="#">公司介绍</a></li>
+              <li><a href="#">加入团队</a></li>
+              <li><a href="#">合作伙伴</a></li>
+              <li><a href="#">用户评价</a></li>
+              <li><a href="#">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2025 WanderLux 精品旅行. 保留所有权利.</span>
+        <div class="footer-links">
+          <a href="#">隐私政策</a>
+          <a href="#">服务条款</a>
+          <a href="#">退款政策</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 回顶部 -->
+  <button class="back-top" id="backTop"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="main.js"></script>
+  <script src="detail.js"></script>
+</body>
+</html>
